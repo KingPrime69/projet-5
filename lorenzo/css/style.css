@@ -1,0 +1,150 @@
+html, body{
+  padding: 0%;
+  margin: 0%;
+}
+h1, h2, h3, h4{
+  font-family: 'Kaushan Script', cursive;
+  text-align: center;
+}
+
+h1{
+  font-family: 'M PLUS Code Latin', sans-serif;
+  color: white;
+  text-shadow: 3px 3px 5px #4ee0ff;
+}
+
+
+h2, h3{
+  color: #4ee0ff;
+  text-shadow: 0px 0px 15px #328fd4;
+}
+
+p{
+  margin-left: 1% !important;
+  color: #4ee0ff;
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.bg{
+  background-image: url(../img/bannnera.jpg);
+  background-size: cover;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.title p{
+  font-size: 1.5em;
+  font-family: 'M PLUS Code Latin', sans-serif;
+  color: white;
+  text-shadow: 3px 3px 5px #4ee0ff;
+}
+
+.modal{
+  background: radial-gradient(circle, rgba(60,96,124,1) 0%, rgba(38,38,38,1) 40%);
+}
+
+.modal .modal-content text{
+  color: white;
+}
+
+
+.title{
+  background: radial-gradient(circle, rgba(60,96,124,1) 0%, rgba(38,38,38,1) 40%);
+  border-bottom: 5px white;
+}
+
+.modal-trigger{
+  margin-top: 8%;
+  color: #262626;
+}
+
+.trans {
+  height: 2px;
+  background: radial-gradient(circle, rgba(53,79,99,1) 30%, rgba(255,255,255,1) 70%);
+}
+
+.bg_main{
+  background-color: #011f3c;
+  padding-bottom: 5%;
+}
+
+.parallax-container {
+  margin-bottom: 5%;
+  height: 300px;
+}
+
+.parallax-container .parallax{
+  z-index: 2;
+}
+
+.carousel .button{
+  text-align: inherit;
+  margin-top: 20%;
+  position: relative;
+  padding: 0;
+  z-index: 10;
+  color: #011f3c;
+}
+
+.carousel {
+  height: 400px !important;
+  margin-bottom: 1%;
+}
+
+
+
+.carousel{
+  height: 400px !important;
+}
+
+.carousel .carousel-item > img {
+  height: 450px !important;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel .button{
+  text-align: inherit;
+  margin-top: 30%;
+  position: relative;
+  padding: 0;
+  z-index: 10;
+  color: #011f3c;
+}
+
+.card .carousel .button{
+  margin-top: 15%;
+}
+
+.button .show{
+  border-radius: 100%;
+  padding: 5px;
+  margin-left: 5px;
+}
+
+.button .right{
+  margin-right: 10px;
+  text-align: right;
+}
+
+.button .left{
+  text-align: left;
+}
+
+.easter{
+  z-index: 20;
+}
+
+.quentin{
+  margin-left: 5% !important;
+}
