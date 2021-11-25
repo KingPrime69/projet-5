@@ -4,6 +4,10 @@ $(document).ready(function(){
     fullWidth: true,
   });
   $('.modal').modal();
+  $('#send').click( function(){
+    $('.modal').modal('close');
+    $(this).val('');
+  });
   $('.parallax').parallax();
   $('#button_next1').on('click', function() {
     $('.algo .carousel').carousel('next');
@@ -35,10 +39,6 @@ $(document).ready(function(){
   $('#button_nextC').on('click', function() {
     $('.C .carousel').carousel('next');
   })
-  $('#send').click( function(){
-    $('.modal').modal('close');
-    $(this).val('');
-  });
   $('#pre_algo').on('click', function() {
     $('.init .carousel').carousel('prev');
   })
