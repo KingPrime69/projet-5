@@ -1,7 +1,6 @@
 <?php
 require_once "init.php";
-$user = "user(surname,email,password)"
-$sql = "UPDATE user SET  VALUES(:surname,:email,:password) WHERE surname = " ."'{$_SESSION['user']['surname']}'";
+$sql = "UPDATE user SET user(surname,email,password) WHERE surname = VALUES(:surname,:email,:password) ";
 $verif = "SELECT * FROM user WHERE surname = '".$_POST['surname']."' AND email='".$_POST['email']."'";
 $pre = $pdo->prepare($verif);
 $pre->execute();
