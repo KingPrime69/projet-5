@@ -9,7 +9,7 @@ h1, h2, h3, h4{
 
 h1{
   font-family: 'M PLUS Code Latin', sans-serif;
-  color: white;
+  color: yellow;
   text-shadow: 3px 3px 5px #4ee0ff;
 }
 
@@ -57,14 +57,13 @@ header {
   color: white;
 }
 
-
 .title{
   background: radial-gradient(circle, rgba(60,96,124,1) 0%, rgba(38,38,38,1) 40%);
-  border-bottom: 5px white;
+  border-bottom: 5px black;
 }
 
 .modal-trigger{
-  margin-top: 8%;
+  margin: 0% !important;
   color: #262626;
 }
 
@@ -100,8 +99,6 @@ header {
   height: 400px !important;
   margin-bottom: 1%;
 }
-
-
 
 .carousel{
   height: 400px !important;

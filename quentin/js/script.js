@@ -4,10 +4,6 @@ $(document).ready(function(){
     fullWidth: true,
   });
   $('.modal').modal();
-  $('#send').click( function(){
-    $('.modal').modal('close');
-    $(this).val('');
-  });
   $('.parallax').parallax();
   $('#button_next1').on('click', function() {
     $('.algo .carousel').carousel('next');

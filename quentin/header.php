@@ -7,6 +7,7 @@
       <div class="name">
         <a><img class="circle" src="img/manette2.jpg"></a>
         <a><span class="white-text name"><?php echo $_SESSION['user']['surname']; ?></span></a>
+        <a href="account.php"><i class="material-icons">bookmark</i>Projet 1</a>
       </div>
     </div></li>
     <li><a href="index.php"><i class="material-icons">arrow_forward</i>Présentation</a></li>
@@ -22,53 +23,6 @@
         <a href="#" data-target="slide-out" class="col l1 sidenav-trigger"><i class="material-icons">menu</i></a>
           <h1 class="col m8 l8 offset-l1 hide-on-small-only">Webfolio: Projets Gaming Campus</h1>
           <p class="hide-on-med-and-up col s8">Webfolio: Projets Gaming Campus</p>
-          <a class="right cyan accent-1 waves-effect waves-light btn modal-trigger" href="#modal1">S'inscrire</a>
-          <div id="modal1" class="modal bottom-sheet">
-            <div class="col s12 m12 l12 modal-content">
-              <form class="col s6 offset-s3" method="post" action="signup.php">
-                <div class="input-field col s10">
-                  <i class="material-icons prefix">account_circle</i>
-                  <input id="icon_prefix" type="text" name="surname">
-                  <label for="icon_prefix">pseudo</label>
-                </div>
-                <div class="input-field col s10">
-                  <i class="material-icons prefix">account_circle</i>
-                  <input id="icon_prefix" type='email' name='email'>
-                  <label for="icon_prefix">email</label>
-                </div>
-                <div class="input-field col s10">
-                  <i class="material-icons prefix">lock_outline</i>
-                  <input id="icon_prefix" type='password' name='password'>
-                  <label for="icon_prefix">mot de passe</label>
-                </div>
-                <button id="send" class="col l2 btn waves-effect waves-light send" type="submit" name="Me connecter">
-                  <i class="material-icons left">send</i>
-                  envoyer
-                </button>
-              </div>
-              </form>
-            </div>
-              <a class="right cyan accent-1 waves-effect waves-light btn modal-trigger" href="#modal2">Se connecter</a>
-              <div id="modal2" class="modal bottom-sheet">
-                <div class="col s12 m12 l12 modal-content">
-                  <form class="col s6 offset-s3" method="post" action="login.php">
-                    <div class="input-field col s10">
-                      <i class="material-icons prefix">account_circle</i>
-                      <input id="icon_prefix" type="text" name="surname">
-                      <label for="icon_prefix">pseudo</label>
-                    </div>
-                    <div class="input-field col s10">
-                      <i class="material-icons prefix">lock_outline</i>
-                      <input id="icon_prefix" type='password' name='password'>
-                      <label for="icon_prefix">mot de passe</label>
-                    </div>
-                    <button id="send" class="col l2 btn waves-effect waves-light send" type="submit" name="Me connecter">
-                      <i class="material-icons left">send</i>
-                      envoyer
-                    </button>
-                  </div>
-              </form>
-            </div>
         <div class="col s12 m12 l12 trans hide-on-small-only"></div>
     </div>
   </div>
