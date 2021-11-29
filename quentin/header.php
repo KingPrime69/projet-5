@@ -7,7 +7,7 @@
       <div class="name">
         <a><img class="circle" src="img/manette2.jpg"></a>
         <a><span class="white-text name"><?php echo $_SESSION['user']['surname']; ?></span></a>
-        <a href="account.php"><i class="material-icons">bookmark</i>Projet 1</a>
+        <a href="account.php">Mon compte</a>
       </div>
     </div></li>
     <li><a href="index.php"><i class="material-icons">arrow_forward</i>Présentation</a></li>

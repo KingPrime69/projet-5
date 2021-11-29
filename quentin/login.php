@@ -11,5 +11,5 @@ if(empty($user)){ //vérifie si le resultat est vide !
 }else{
      $_SESSION['user'] = $user; //on enregistre que l'utilisateur est connecté
 }
-header('Location:index.php');
+header('Location:account.php');
 ?>

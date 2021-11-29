@@ -1,6 +1,7 @@
 <?php
 require_once "init.php";
-$sql = "INSERT INTO user(surname,email,password) VALUES(:surname,:email,:password)";
+$user = "user(surname,email,password)"
+$sql = "UPDATE user SET  VALUES(:surname,:email,:password) WHERE surname = " ."'{$_SESSION['user']['surname']}'";
 $verif = "SELECT * FROM user WHERE surname = '".$_POST['surname']."' AND email='".$_POST['email']."'";
 $pre = $pdo->prepare($verif);
 $pre->execute();
@@ -11,11 +12,11 @@ $dataBinded=array(
   ':password'=> $_POST['password'],
 );
 if (empty($data)){
+  echo "ok";
   $pre = $pdo->prepare($sql);
   $pre->execute($dataBinded);
 }
 else{
-
+  echo "bite";
 }
-header('Location:account.php')
 ?>
