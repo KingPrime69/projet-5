@@ -10,6 +10,7 @@
             <div class="col l10 offset-l1 bg_main">
               <div class="col s12 m10 l10 offset-l1">
                 <h2 class="header">Projet 1 : Initiation à l'Algorithmie</h2>
+                <?php require_once "caroussel.php"; ?>
                 <div class="col s10 m12 l12 init">
                   <div class="card horizontal">
                     <div class="carousel carousel-slider center">
