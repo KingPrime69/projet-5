@@ -56,17 +56,17 @@
         <form class="col s12" method="post" action="change.php">
           <div class="input-field col s8 offset-l2">
             <i class="material-icons prefix cyan-text">account_circle</i>
-            <input id="icon_prefix" class="cyan-text" type="text" name="surname">
+            <input id="icon_prefix surname" class="cyan-text" type="text" name="surname">
             <label for="icon_prefix" class="cyan-text"><?php echo $_SESSION['user']['surname']; ?></label>
           </div>
           <div class="input-field col s8 offset-l2">
             <i class="material-icons prefix cyan-text">email</i>
-            <input id="icon_prefix" class="cyan-text" type="text" name="email">
+            <input id="icon_prefix email" class="cyan-text" type="text" name="email">
             <label for="icon_prefix" class="cyan-text"><?php echo $_SESSION['user']['email']; ?></label>
           </div>
           <div class="input-field col s8 offset-l2">
             <i class="material-icons prefix cyan-text">lock_outline</i>
-            <input id="icon_prefix" class="cyan-text" type="text" name="password">
+            <input id="icon_prefix password" class="cyan-text" type="text" name="password">
             <label for="icon_prefix" class="cyan-text"><?php echo $_SESSION['user']['password']; ?></label>
           </div>
           <button id="send" class="col l2 offset-l10 btn waves-effect waves-light send" type="submit" name="Me connecter">
