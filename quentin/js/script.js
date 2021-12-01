@@ -1,4 +1,12 @@
 $(document).ready(function(){
+  $('.connecte button').on('click', function() {
+    $('.connect').show();
+    $('.log').hide();
+  })
+  $('.subcribe button').on('click', function() {
+    $('.connect').hide();
+    $('.log').show();
+  })
   $('.sidenav').sidenav();
   $('.carousel.carousel-slider').carousel({
     fullWidth: true,
@@ -84,6 +92,7 @@ $(document).ready(function(){
     $('.seo .carousel').carousel('next');
   })
 });
+
 
 $('#test').val('').removeClass('valid');
 M.updateTextFields();

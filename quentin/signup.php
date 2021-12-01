@@ -8,7 +8,7 @@ $data = $pre->fetchAll(PDO::FETCH_ASSOC);
 $dataBinded=array(
   ':surname'=> $_POST['surname'],
   ':email'  => $_POST['email'],
-  ':password'=> $_POST['password'],
+  ':password'=> hash('sha1',$_POST['password']),
 );
 if (empty($data)){
   $pre = $pdo->prepare($sql);
@@ -17,5 +17,5 @@ if (empty($data)){
 else{
 
 }
-header('Location:account.php')
+header('Location:account.php');
 ?>

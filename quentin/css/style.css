@@ -2,7 +2,7 @@ html, body{
   padding: 0%;
   margin: 0%;
 }
-h1, h2, h3, h4{
+h1, h2, h3{
   font-family: 'Kaushan Script', cursive;
   text-align: center;
 }
@@ -14,9 +14,17 @@ h1{
 }
 
 
-h2, h3{
+h2, h3, h4{
   color: #4ee0ff;
   text-shadow: 0px 0px 15px #328fd4;
+}
+
+h3{
+  margin-bottom: 0 !important;
+}
+
+h4{
+  font-size: 30px;
 }
 
 p{
@@ -30,6 +38,10 @@ header {
   position: sticky;
   top: 0;
   z-index: 10;
+}
+
+form{
+  margin-bottom: 0 !important;
 }
 
 .bg{
@@ -144,4 +156,18 @@ header {
 
 .quentin{
   margin-left: 5% !important;
+}
+
+.connect{
+  display: none;
+}
+
+.top{
+  border-bottom: 2px solid white;
+}
+
+.bloc_user{
+  border-bottom: 3px solid white;
+  border-left: 3px solid white;
+  border-right: 3px solid white;
 }

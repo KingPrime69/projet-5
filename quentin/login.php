@@ -1,7 +1,7 @@
 
 <?php
 require_once "init.php";
-$sql = "SELECT * FROM user WHERE surname='".$_POST['surname']."' AND password='".$_POST['password']."'";
+$sql = "SELECT * FROM user WHERE surname='".$_POST['surname']."' AND password='".hash('sha1',$_POST['password'])."'";
 $pre = $pdo->prepare($sql);
 $pre->execute();
 $user = current($pre->fetchAll(PDO::FETCH_ASSOC));//current prend la première ligne du tableau

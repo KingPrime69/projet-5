@@ -6,7 +6,8 @@
       </div>
       <div class="name">
         <a><img class="circle" src="img/manette2.jpg"></a>
-        <a><span class="white-text name"><?php echo $_SESSION['user']['surname']; ?></span></a>
+        <a><span class="white-text name"><?php if(empty($_SESSION['user']['surname'])){echo "Vous n'êtes pas connecter";}
+          else{echo $_SESSION['user']['surname'];}?></span></a>
         <a href="account.php">Mon compte</a>
       </div>
     </div></li>
@@ -15,6 +16,15 @@
     <li><a href="Projet 1.php"><i class="material-icons">bookmark</i>Projet 1</a></li>
     <li><a href="Projet 2.php"><i class="material-icons">bookmark</i>Projet 2</a></li>
     <li><a href="Projet 3.php"><i class="material-icons">bookmark</i>Projet 3</a></li>
+    <?php
+    if(!empty($_SESSION['user'])){
+      if($_SESSION['user']['surname'] == 'admin'){
+        ?>
+        <li><a href="Pannel_admin.php"><i class="material-icons">bookmark</i>User</a></li>
+        <?php
+      }
+    }
+    ?>
   </ul>
   <header>
     <div class="row">
