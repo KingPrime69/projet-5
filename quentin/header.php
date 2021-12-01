@@ -20,6 +20,9 @@
     if(!empty($_SESSION['user'])){
       if($_SESSION['user']['surname'] == 'admin'){
         ?>
+        <li><div class="divider"></div></li>
+        <li><a><i class="material-icons">arrow_forward</i>Pannel Admin</a></li>
+        <li><div class="divider"></div></li>
         <li><a href="Pannel_admin.php"><i class="material-icons">bookmark</i>User</a></li>
         <?php
       }
