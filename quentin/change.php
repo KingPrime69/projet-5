@@ -20,7 +20,5 @@ if (empty($data)){
   $user = current($pre->fetchAll(PDO::FETCH_ASSOC));
   $_SESSION['user'] = $user;
 }
-else{
-}
 header('Location:account.php');
 ?>

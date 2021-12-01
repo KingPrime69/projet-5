@@ -18,9 +18,17 @@
 
     foreach($data as $user){ ?>
       <div class="bloc_user col s10 offset-l1">
-        <h4 class="col s4"><?php echo $user['surname']?></h4>
-        <h4 class="email col s4"><?php echo $user['email'] ?></h4>
         <form class="" action="modif.php" method="post">
+        <div class="input-field col s4">
+          <i class="material-icons prefix cyan-text">account_circle</i>
+          <input id="icon_prefix" class="cyan-text" type="text" name="surname">
+          <label for="icon_prefix" class="cyan-text"><?php echo $user['surname']?></label>
+        </div>
+        <div class="input-field col s4">
+          <i class="material-icons prefix cyan-text">mail</i>
+          <input id="icon_prefix" class="cyan-text" type="text" name="email">
+          <label for="icon_prefix" class="cyan-text"><?php echo $user['email']?></label>
+        </div>
         <button id="send" class="col l2 btn cyan accent-1 waves-effect waves-light btn black-text" type="submit" name="Me connecter">
           <i class="material-icons left">send</i>
           modifier
