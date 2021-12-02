@@ -60,3 +60,7 @@
         <div class="col s12 m12 l12 trans hide-on-small-only"></div>
     </div>
   </header>
+
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>

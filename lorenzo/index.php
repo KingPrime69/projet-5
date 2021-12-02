@@ -79,7 +79,7 @@
         <div class="projectweb">
           <div class="col s12 m12 l12 parallax-container">
             <div class="parallax">
-              <img src="img/html.png" alt="Projet">
+              <img src="img/html.jpg" alt="Projet">
             </div>
           </div>
           <h2 class="col s12 m12 l12">Site Web, Projet 3</h2>

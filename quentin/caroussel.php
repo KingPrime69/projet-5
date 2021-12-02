@@ -1,5 +1,15 @@
 <html>
   <body>
+    <html>
+   <head>
+      <title>Stock d'images</title>
+   </head>
+   <body>
+      <form enctype="multipart/form-data" action="#" method="post">
+         <input type="hidden" name="MAX_FILE_SIZE" value="250000" />
+         <input type="file" name="fic" size=50 />
+         <input type="submit" value="Envoyer" />
+      </form>
     <?php
       echo '<div id="c2carrousel">';
       $CheminDossierImages="./img";
