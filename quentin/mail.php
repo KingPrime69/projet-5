@@ -8,7 +8,6 @@ $headers = array('MIME-Version: 1.0','Content-type: text/html; charset=utf8');
 $to = "qripot@gaming.tech";
 echo $to;
 if(mail($email,$subject,$message,$headers)){
-);
 }else{
     //on a une erreur quelque part
 }
