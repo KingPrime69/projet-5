@@ -15,7 +15,6 @@ if (empty($data)){
   $pre->execute($dataBinded);
 }
 else{
-
 }
 header('Location:account.php');
 ?>

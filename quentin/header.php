@@ -6,9 +6,7 @@
       </div>
       <div class="name">
         <a><img class="circle" src="img/manette2.jpg"></a>
-        <a><span class="white-text name"><?php if(empty($_SESSION['user']['surname'])){echo "Vous n'êtes pas connecter";}
-          else{echo $_SESSION['user']['surname'];}?></span></a>
-        <a href="account.php">Mon compte</a>
+        <a href="account.php"><?php if(empty($_SESSION['user']['surname'])){echo "Vous n'êtes pas connecter";}else{echo "Compte de "."{$_SESSION['user']['surname']}";}?></a>
       </div>
     </div></li>
     <li><a href="index.php"><i class="material-icons">arrow_forward</i>Présentation</a></li>

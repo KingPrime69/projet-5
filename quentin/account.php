@@ -9,24 +9,22 @@
         <?php if(empty($_SESSION['user']['surname'])){
           ?>
           <div class="log">
+            <h2>S'inscrire</h2>
           <form class="col s12" method="post" action="signup.php">
           <div class="input-field col s8 offset-l2">
             <i class="material-icons prefix cyan-text">account_circle</i>
             <input id="icon_prefix" class="cyan-text" type="text" name="surname">
-            <label for="icon_prefix" class="cyan-text"><?php if(empty($_SESSION['user']['surname'])){echo "Pseudo";}
-              else{echo $_SESSION['user']['surname'];} ?></label>
+            <label for="icon_prefix" class="cyan-text"><?php if(empty($_SESSION['user']['surname'])){echo "Pseudo";}?></label>
           </div>
           <div class="input-field col s8 offset-l2">
             <i class="material-icons prefix cyan-text">email</i>
             <input id="icon_prefix" class="cyan-text" type="text" name="email">
-            <label for="icon_prefix" class="cyan-text"><?php if(empty($_SESSION['user']['email'])){echo "example@email.com";}
-              else{echo $_SESSION['user']['surname'];} ?></label>
+            <label for="icon_prefix" class="cyan-text"><?php if(empty($_SESSION['user']['email'])){echo "example@email.com";}?></label>
           </div>
           <div class="input-field col s8 offset-l2">
             <i class="material-icons prefix cyan-text">lock_outline</i>
             <input id="icon_prefix" class="cyan-text" type="password" name="password">
-            <label for="icon_prefix" class="cyan-text"><?php if(empty($_SESSION['user']['surname'])){echo "Mot de Passe";}
-              else{echo "Mot de Passe";} ?></label>
+            <label for="icon_prefix" class="cyan-text"><?php if(empty($_SESSION['user']['surname'])){echo "Mot de Passe";}?></label>
           </div>
           <button id="send" class="col l2 offset-l8 btn cyan accent-1 waves-effect waves-light btn black-text" type="submit" name="Me connecter">
             <i class="material-icons left">send</i>
@@ -39,8 +37,10 @@
             se connecter
           </button>
         </div>
+
       </div>
         <div class="connect">
+          <h2>Se Connecter</h2>
           <form class="col s12" method="post" action="login.php">
             <div class="input-field col s8 offset-l2">
               <i class="material-icons prefix cyan-text">account_circle</i>
@@ -53,6 +53,17 @@
               <input id="icon_prefix" class="cyan-text" type="password" name="password">
               <label for="icon_prefix" class="cyan-text"><?php if(empty($_SESSION['user']['surname'])){echo "Mot de Passe";}
               else{echo "Mot de Passe";} ?></label>
+            </div>
+            <div class="col s12 center">
+              <?php
+              if(!empty($_SESSION['error'])){
+                if($_SESSION["error"] == "error"){
+                  ?>
+                  <p><?php echo "Utilisateur ou mot de passe incorrect !"; ?></p>
+                  <?php
+                }
+              }
+              ?>
             </div>
             <button id="send" class="col l2 offset-l8 btn cyan accent-1 waves-effect waves-light btn black-text" type="submit" name="Me connecter">
               <i class="material-icons left">send</i>
@@ -70,6 +81,7 @@
           else{
             ?>
             <form class="col s12" method="post" action="change.php">
+              <h2>Votre Compte</h2>
               <div class="input-field col s8 offset-l2">
                 <i class="material-icons prefix cyan-text">account_circle</i>
                 <input id="icon_prefix" class="cyan-text" type="text" name="surname">
